@@ -1,7 +1,7 @@
 function openSidebar() {
-    document.querySelector('.sidebar').style.display = 'block';
+  document.querySelector(".sidebar").style.display = "block";
 }
 
 function closeSidebar() {
-    document.querySelector('.sidebar').style.display = 'none';
+  document.querySelector(".sidebar").style.display = "none";
 }
