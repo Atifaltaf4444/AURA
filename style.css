@@ -39,7 +39,7 @@ body {
   transition: 0.3s ease-in-out;
   background: linear-gradient(50deg, #6c49f9, #a556f5, #fff);
   padding: 5px 10px;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 .sidelogo {
   display: none;
@@ -206,6 +206,50 @@ body {
   position: relative;
 
   z-index: 9999;
+}
+
+.popup {
+  display: none;
+  background-color: #433967;
+  border-radius: 8px;
+  border: 3px solid rgb(125, 11, 186);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: -820px;
+  left: 290px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 30.5px;
+  width: 630px;
+  z-index: 99999;
+  transition: 3s ease-in-out;
+}
+.popup span {
+  color: #fff;
+  background: rgb(82, 14, 14);
+  padding: 9px 18px;
+}
+.popup p {
+  color: #fff;
+  font-weight: 700;
+}
+
+.popup .ok-btn {
+  width: 120px;
+  margin: 0 auto;
+  padding: 8px 30px;
+  background: linear-gradient(160deg, #fff, #a556f5, #6c49f9);
+  border-radius: 5px;
+  margin-top: 8px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.popup .ok-btn:hover {
+  background: linear-gradient(-160deg, #fff, #a556f5, #6c49f9);
 }
 
 /*============================================
@@ -411,6 +455,13 @@ body {
     z-index: 99999;
     left: 280px;
     position: relative;
+  }
+
+  .popup {
+    left: 15px;
+    top: -420px;
+    bottom: -900px;
+    width: 300px;
   }
 
   .container .bottom-image {
